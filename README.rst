@@ -54,6 +54,4 @@ Development
 Preferably in a virtualenv::
 
     pip install -r requirements-dev.txt
-    nosetests --with-watch
-    #or
-    tox
+    nosetests

@@ -1,7 +1,6 @@
 from setuptools import setup, find_packages
 from os.path import realpath, join, dirname
-from noserapido import NoseRapidoNotifier, get_version
-
+import noserapido
 
 BASE = dirname(realpath(__file__))
 
@@ -13,7 +12,8 @@ with open(join(BASE, 'requirements-dev.txt')) as dev_reqs:
     dev_requirements = [line.replace(
         "\n", "") for line in dev_reqs.readlines()]
 
-version_str = get_version()
+
+version_str = noserapido.get_version()
 
 dev_requirements = requirements + dev_requirements[1:]
 
@@ -21,7 +21,7 @@ setup(
     name='nose-rapido',
     version=version_str,
     author='Erik Zaadi',
-    description=NoseRapidoNotifier.__doc__,
+    description=noserapido.__doc__,
     url='https://github.com/erikzaadi/nose-rapido',
     download_url="https://github.com/erikzaadi/nose-rapido/tarball/" +
     version_str,
@@ -29,6 +29,7 @@ setup(
     long_description=long_description,
     license="apache2",
     setup_requires=requirements,
+    install_requires=requirements,
     tests_require=dev_requirements,
     keywords=['testing', 'nose', 'nose plugin', 'tdd'],
     classifiers=[
@@ -40,7 +41,7 @@ setup(
     ],
     entry_points={
         'nose.plugins': [
-            'rapido = noserapido:NoseRapidoNotifier'
+            'rapido = noserapido.plugin:NoseRapidoNotifier'
         ]
     }
 )
