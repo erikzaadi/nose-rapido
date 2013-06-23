@@ -38,7 +38,7 @@ green for successfull tests")
 
     def finalize(self, result):
         term = Terminal()
-        #props to use on result?:
+        #TODO: Calulate if enough screen estate to print out:
         #testsRun, errors, failures, skipped
 
         color_fcn = None
