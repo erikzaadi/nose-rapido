@@ -4,4 +4,3 @@ python:
 
 install: "pip install -r requirements-dev.txt --use-mirrors"
 script: nosetests
-
