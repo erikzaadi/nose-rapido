@@ -3,7 +3,7 @@ nose-rapido
 ===========
 
 .. image:: https://secure.travis-ci.org/erikzaadi/nose-rapido.png?branch=master
-:target: http://travis-ci.org/erikzaadi/nose-rapido
+    :target: http://travis-ci.org/erikzaadi/nose-rapido
 
 A Nose plugin that allows to get rapid feedback from tests, by filling your terminal either with green (can be changed to blue) or red background, depending on your tests result.
 
@@ -33,14 +33,19 @@ Screenshots
 ===========
 
 Good
+
 .. image:: https://github.com/erikzaadi/nose-rapido/raw/master/screenshots/good.png
-:target: https://github.com/erikzaadi/nose-rapido/blob/master/screenshots/good.png
+    :target: https://github.com/erikzaadi/nose-rapido/blob/master/screenshots/good.png
+
 Bad
+
 .. image:: https://github.com/erikzaadi/nose-rapido/raw/master/screenshots/bad.png
-:target: https://github.com/erikzaadi/nose-rapido/blob/master/screenshots/bad.png
+    :target: https://github.com/erikzaadi/nose-rapido/blob/master/screenshots/bad.png
+
 Blue
+
 .. image:: https://github.com/erikzaadi/nose-rapido/raw/master/screenshots/blue.png
-:target: https://github.com/erikzaadi/nose-rapido/blob/master/screenshots/blue.png
+    :target: https://github.com/erikzaadi/nose-rapido/blob/master/screenshots/blue.png
 
 Development
 ===========
