@@ -12,6 +12,7 @@ Use together with a continuous running test plugin such as `nose-watch <https://
 
 Installation
 ============
+::
 
     pip install nose-rapido
 
